@@ -19,11 +19,11 @@ export const NETWORKS = {
     chainId: 50,
     explorer: 'https://explorer.xinfin.network',
     contracts: {
-      Flip: import.meta.env.VITE_Flip_ADDRESS,
+      Flip: import.meta.env.VITE_FLIP_ADDRESS,
       token: import.meta.env.VITE_TOKEN_ADDRESS,
     },
     // Maintain backward compatibility
-    FlipAddress: import.meta.env.VITE_Flip_ADDRESS,
+    FlipAddress: import.meta.env.VITE_FLIP_ADDRESS,
     tokenAddress: import.meta.env.VITE_TOKEN_ADDRESS,
     icon: '🌐',
     color: '#2e7d32',

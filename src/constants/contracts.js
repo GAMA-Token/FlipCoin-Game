@@ -12,7 +12,7 @@ export const TOKEN_CONTRACT_ADDRESS_APOTHEM = import.meta.env
   .VITE_APOTHEM_TOKEN_ADDRESS;
 
 // XDC Mainnet
-export const Flip_CONTRACT_ADDRESS_MAINNET = import.meta.env.VITE_Flip_ADDRESS;
+export const Flip_CONTRACT_ADDRESS_MAINNET = import.meta.env.VITE_FLIP_ADDRESS;
 export const TOKEN_CONTRACT_ADDRESS_MAINNET = import.meta.env
   .VITE_TOKEN_ADDRESS;
 

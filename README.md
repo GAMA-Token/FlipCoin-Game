@@ -34,7 +34,7 @@ Create a `.env` file in the root directory with these variables:
 ```
 # XDC Mainnet
 VITE_TOKEN_ADDRESS=<mainnet-token-contract-address>
-VITE_Flip_ADDRESS=<mainnet-flip-contract-address>
+VITE_FLIP_ADDRESS=<mainnet-flip-contract-address>
 VITE_XDC_MAINNET_RPC=https://erpc.xinfin.network
 
 # XDC Testnet (Apothem)
