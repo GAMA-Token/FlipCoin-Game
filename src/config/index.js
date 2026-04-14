@@ -13,7 +13,7 @@ export const NETWORK_CONFIG = {
     contracts: {
       // Use environment variables for contract addresses
       token: import.meta.env.VITE_TOKEN_ADDRESS || '',
-      Flip: import.meta.env.VITE_Flip_ADDRESS || '',
+      Flip: import.meta.env.VITE_FLIP_ADDRESS || '',
     },
     explorer: 'https://xdcscan.com/',
   },
