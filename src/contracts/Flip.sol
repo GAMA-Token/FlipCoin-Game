@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
-import "@openzeppelin/contracts/utils/Pausable.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts@4.3.3/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts@4.3.3/security/Pausable.sol";
+import "@openzeppelin/contracts@4.3.3/access/Ownable.sol";
 
-import "lib/contractsv2/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
-import "lib/contractsv2/src/v0.8/VRFConsumerBaseV2.sol";
+import "@goplugin/contracts2_3/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
+import "@goplugin/contracts2_3/src/v0.8/VRFConsumerBaseV2.sol";
 
 interface IERC20 {
     function totalSupply() external view returns (uint256);
@@ -137,7 +137,7 @@ contract Flip is ReentrancyGuard, Pausable, VRFConsumerBaseV2, Ownable {
         uint32 _callbackGasLimit,
         uint16 _requestConfirmations,
         uint8 _numWords
-    ) VRFConsumerBaseV2(vrfCoordinator) Ownable(msg.sender) {
+    ) VRFConsumerBaseV2(vrfCoordinator) {
         require(_gamaTokenAddress != address(0), "Token address cannot be zero");
         require(vrfCoordinator != address(0), "VRF coordinator cannot be zero");
         require(_callbackGasLimit > 0, "Callback gas limit cannot be zero");
